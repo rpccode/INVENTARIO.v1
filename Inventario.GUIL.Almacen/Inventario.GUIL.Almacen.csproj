@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MongoDB.Driver" Version="2.13.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\inventario.BIZ\inventario.BIZ.csproj" />
+    <ProjectReference Include="..\iNVENTARIO.COMMON\iNVENTARIO.COMMON.csproj" />
+    <ProjectReference Include="..\Inventario.DAL\Inventario.DAL.csproj" />
+  </ItemGroup>
+
+</Project>

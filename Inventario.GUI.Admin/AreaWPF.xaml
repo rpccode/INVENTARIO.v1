@@ -1,0 +1,30 @@
+﻿<Window x:Class="Inventario.GUI.Admin.AreaWPF"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Inventario.GUI.Admin"
+        mc:Ignorable="d"
+        Title="Area" Height="100" Width="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <TextBlock>ID:</TextBlock>
+            <TextBlock x:Name="txtAreaId"></TextBlock>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <Label>Nombre Area:</Label>
+            <TextBox x:Name="txbNombreArea" Width="300"></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Row="2">
+            <Button x:Name="btnAreaNuevo" Width="100" Click="btnAreaNuevo_Click">Nuevo</Button>
+            <Button x:Name="btnAreaEliminar" Width="100" Click="btnAreaEliminar_Click" >Eliminar</Button>
+        </StackPanel> 
+        
+        
+    </Grid>
+</Window>
